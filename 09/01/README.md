@@ -6,4 +6,11 @@
 
 Необходимые знания:
 
-[Переменные](http://unity3d.unium.ru/lessons/lesson9/index.html#variables), [конкатенация строк](http://unity3d.unium.ru/lessons/lesson9/index.html#concatenate), [позиция объекта](http://unity3d.unium.ru/lessons/lesson9/index.html#positionobject), [копирование переменных](http://unity3d.unium.ru/lessons/lesson9/index.html#copypaste).
+[Переменные](https://github.com/UniumGames/Lessons/tree/master/09#Переменные), [конкатенация строк](https://github.com/UniumGames/Lessons/tree/master/09#Конкатенация-строк), [позиция объекта](https://github.com/UniumGames/Lessons/tree/master/09#Позиция-объекта)
+
+Критерии качества:
+
+- скрипт работает;
+- скрипт красиво оформлен;
+- скрипт отображает координаты игрока;
+- скрипт отображает координаты игрока в отформатированном виде.
