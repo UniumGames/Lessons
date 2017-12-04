@@ -43,6 +43,7 @@ void Update () {
 - `Vector2`. Переменная данного типа хранит в себе значение по оси x и y;
 - `Vector3`. Переменная данного типа хранит в себе значение по оси x, y и z;
 - `GameObject`. Переменная хранит в себе объект из сцены Unity;
+- `Transform`. Переменная хранит в себе transform (координаты, поворот и масштаб) объекта из сцены Unity;
 - `Color`. Хранит цвет;
 
 Так создается целочисленная переменная с именем `number`, в которую записывается число 42
@@ -137,5 +138,35 @@ void Start () {
 	print(transform.position.x);
 	print(transform.position.y);
 	print(transform.position.z);
+}
+```
+### Получение внешних объектов и параметров
+
+Часто нам требуется, чтобы один объект взаимодействовал с другим. Для этого в скрипте данного объекта следует создать публичную переменную
+
+```csharp
+// создаем переменную, в которой 
+// будем хранить ссылку на transform врага
+public Transform enemy;
+```
+
+После этого она появится в инспекторе свойств объекта. И мы сможем присвоить ей нужное значение (или объект)
+
+![](https://api.monosnap.com/rpc/file/download?id=D60kfPkGu4MV9ijO2Dk4oSV0vfneR9)
+
+В этом примере мы выводим в консоль координаты врага, ссылка на который добавляется через инспектор свойств объекта
+
+```csharp
+using UnityEngine;
+
+public class EnemyCoordinates : MonoBehaviour {
+	// публичная переменная для хранения врага
+	public Transform enemy;
+
+	void Start () {
+		print(enemy.position.x);
+		print(enemy.position.y);
+		print(enemy.position.z);
+	}
 }
 ```
