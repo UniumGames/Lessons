@@ -111,7 +111,7 @@ void Start() {
 
 ```csharp
 void Start () {
-  print(5 - 3);
+	print(5 - 3);
 }
 ```
 
@@ -123,10 +123,10 @@ void Start () {
 
 ```csharp
 void Start () {
-  string word1 = "Hello ";
-  string word2 = "world";
-  string word3 = "!";
-  print(word1 + word2 + word3);
+	string word1 = "Hello ";
+	string word2 = "world";
+	string word3 = "!";
+	print(word1 + word2 + word3);
 }
 ```
 
