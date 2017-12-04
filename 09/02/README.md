@@ -6,7 +6,7 @@
 
 Необходимые знания:
 
-[Переменные](https://github.com/UniumGames/Lessons/tree/master/09#Переменные), [конкатенация строк](https://github.com/UniumGames/Lessons/tree/master/09#Конкатенация-строк), [позиция объекта](https://github.com/UniumGames/Lessons/tree/master/09#Позиция-объекта), [счетчик времени с помощью Time.deltaTime](https://github.com/UniumGames/Lessons/tree/master/09#Счетчик-времени-с-помощью-timedeltatime).
+[Переменные](https://github.com/UniumGames/Lessons/tree/master/09#Переменные), [конкатенация строк](https://github.com/UniumGames/Lessons/tree/master/09#Конкатенация-строк), [счетчик времени с помощью Time.deltaTime](https://github.com/UniumGames/Lessons/tree/master/09#Счетчик-времени-с-помощью-timedeltatime).
 
 Критерии качества:
 

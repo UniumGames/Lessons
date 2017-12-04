@@ -3,13 +3,13 @@
 Практически в любой современной игре требуется знать и отображать на экране расстояние до определенного объект. Подсчитай расстояние между игроком и объектом (монстром). Выведи расстояние на панели консоли. Расстояние между объектами можно найти с помощью функции `Vector3.Distance()`
 
 ```csharp
-// сохраняем расстояние до другого объекта в переменную dist
-float dist = Vector3.Distance(object.position, transform.position);
+// сохраняем расстояние до монстра в переменную dist
+float dist = Vector3.Distance(monster.position, transform.position);
 ```
 
 Необходимые знания:
 
-[Переменные](https://github.com/UniumGames/Lessons/tree/master/09#Переменные), [конкатенация строк](https://github.com/UniumGames/Lessons/tree/master/09#Конкатенация-строк), [позиция объекта](https://github.com/UniumGames/Lessons/tree/master/09#Позиция-объекта)
+[Переменные](https://github.com/UniumGames/Lessons/tree/master/09#Переменные), [конкатенация строк](https://github.com/UniumGames/Lessons/tree/master/09#Конкатенация-строк), [позиция объекта](https://github.com/UniumGames/Lessons/tree/master/09#Позиция-объекта), [Получение внешних объектов и параметров](https://github.com/UniumGames/Lessons/tree/master/09#Получение-внешних-объектов-и-параметров)
 
 Критерии качества:
 
