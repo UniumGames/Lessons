@@ -129,7 +129,7 @@ void Update () {
 
 ## Позиция объекта
 
-Координаты  объекта хранятся в свойстве `transform.position`
+Координаты  объекта хранятся в свойстве `transform.position`. Каждая координата имеет тип float
 
 ```csharp
 void Start () {
