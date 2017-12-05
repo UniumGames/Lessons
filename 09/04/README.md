@@ -4,7 +4,7 @@
 
 Необходимые знания:
 
-[Переменные](https://github.com/UniumGames/Lessons/tree/master/09#Переменные), [конкатенация строк](https://github.com/UniumGames/Lessons/tree/master/09#Конкатенация-строк), [позиция объекта](https://github.com/UniumGames/Lessons/tree/master/09#Позиция-объекта), [операции с переменными](https://github.com/UniumGames/Lessons/tree/master/09#Операции-с-переменными).
+[Переменные](https://github.com/UniumGames/Lessons/tree/master/09#Переменные), [конкатенация строк](https://github.com/UniumGames/Lessons/tree/master/09#Конкатенация-строк), [операции с переменными](https://github.com/UniumGames/Lessons/tree/master/09#Операции-с-переменными).
 
 Критерии качества:
 
