@@ -5,12 +5,12 @@ using UnityEngine;
 public class Coordinates : MonoBehaviour {
 
 	void Start() {
+	}
+
+	void Update() {
 		float x = transform.position.x;
 		float y = transform.position.y;
 		float z = transform.position.x;
 		print("Координаты: x = " + x + ", y = " + y + ", z = " + z);
-	}
-
-	void Update() {
 	}
 }
