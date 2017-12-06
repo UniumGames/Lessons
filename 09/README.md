@@ -196,7 +196,7 @@ public Transform enemy;
 
 После этого она появится в инспекторе свойств объекта. И мы сможем присвоить ей нужное значение (или объект)
 
-![](https://api.monosnap.com/rpc/file/download?id=D60kfPkGu4MV9ijO2Dk4oSV0vfneR9)
+![](https://api.monosnap.com/rpc/file/download?id=AC19OMH7ci0WMOlvZIc49dvjCcvGSN)
 
 В этом примере мы выводим в консоль координаты врага, ссылка на который добавляется через инспектор свойств объекта
 
