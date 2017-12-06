@@ -163,7 +163,7 @@ void Update () {
 	// чтобы время обновилось
 	time = time + Time.deltaTime;
 	// отбрасывем дробную часть 
-	// и сохраняем в seconds
+	// и сохраняем целую часть в seconds
 	int seconds = (int)time;
 	print(seconds);
 }
