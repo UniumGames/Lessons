@@ -1,4 +1,5 @@
-### Занятие №9: Введение в скрипты
+<details><summary>Занятие №9: Введение в скрипты</summary>
+
 1. [Скрипты. Программирование с помощью C#](https://github.com/UniumGames/Lessons/blob/master/09/README.md#Скрипты-Программирование-с-помощью-c)
 2. [Панель консоли](https://github.com/UniumGames/Lessons/blob/master/09/README.md#Панель-консоли)
 3. [Установка среды разработки](https://github.com/UniumGames/Lessons/blob/master/09/README.md#Установка-среды-разработки)
@@ -19,3 +20,5 @@
 3. [Расстояние до объекта](https://github.com/UniumGames/Lessons/tree/master/09/03)
 4. [Длина окружности](https://github.com/UniumGames/Lessons/tree/master/09/04)
 5. [Сколько золотых монет](https://github.com/UniumGames/Lessons/tree/master/09/05)
+
+</details>
