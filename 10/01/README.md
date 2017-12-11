@@ -6,7 +6,7 @@
 
 Необходимые знания:
 
-[Conditions (Условия)](http://unity3d.unium.ru/lessons/lesson10/index.html#conditions)
+[Conditions (Условия)](https://github.com/UniumGames/Lessons/tree/master/10#Оператор-if)
 
 Критерии качества:
 
