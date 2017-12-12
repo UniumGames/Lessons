@@ -23,3 +23,24 @@
 5. [Сколько золотых монет](https://github.com/UniumGames/Lessons/tree/master/09/05)
 
 </details>
+
+<details><summary>Занятие №10: Условия, перемещение объекта, изменение цвета</summary>
+
+1. [Conditions (Условия)](https://github.com/UniumGames/Lessons/tree/master/10#conditions-Условия)
+2. [Оператор if](https://github.com/UniumGames/Lessons/tree/master/10#Оператор-if)
+3. [Неверное условие, else](https://github.com/UniumGames/Lessons/tree/master/10#Неверное-условие-else)
+4. [Цепочка условий, else if](https://github.com/UniumGames/Lessons/tree/master/10#Цепочка-условий-else-if)
+5. [Операторы сравнения](https://github.com/UniumGames/Lessons/tree/master/10#Операторы-сравнения)
+6. [Обращение к компонентам](https://github.com/UniumGames/Lessons/tree/master/10#Обращение-к-компонентам)
+7. [Задание координат объекта](https://github.com/UniumGames/Lessons/tree/master/10#Задание-координат-объекта)
+8. [Движение объекта](https://github.com/UniumGames/Lessons/tree/master/10#Движение-объекта)
+9. [Задание угла поворота объекта](https://github.com/UniumGames/Lessons/tree/master/10#Задание-угла-поворота-объекта)
+10. [Вращение объекта](https://github.com/UniumGames/Lessons/tree/master/10#Вращение-объекта)
+11. [Задание масштаба](https://github.com/UniumGames/Lessons/tree/master/10#Задание-масштаба)
+12. [Задание цвета материала](https://github.com/UniumGames/Lessons/tree/master/10#Задание-цвета-материала)
+
+Задания
+
+1. ​
+
+</details>
