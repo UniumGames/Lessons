@@ -6,7 +6,7 @@ public class Circumference : MonoBehaviour {
 
 	void Start () {
 		int radius = 371;
-		double circumference = 2 * 3.14 * radius;
+		float circumference = 2 * 3.14f * radius;
 		print("Длина окружности с радиусом " + radius + " равна " + circumference);
 	}
 }

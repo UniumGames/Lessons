@@ -167,7 +167,7 @@ void Start () {
 
 ```csharp
 // переменная time может хранить дробные числа
-double time = 0;
+float time = 0;
 void Update () {
 	// складываем time и Time.deltaTime
 	// результат сохраняем обратно в time,
