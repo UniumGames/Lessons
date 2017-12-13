@@ -10,6 +10,6 @@ public class MaxHeight : MonoBehaviour {
 			// то новая высота становится максимальной
 			maxHeight = transform.position.y;
 		}
-		print(maxHeight);
+		print("Максимальная высота: " + maxHeight);
 	}
 }
