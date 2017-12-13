@@ -41,6 +41,10 @@
 
 Задания
 
-1. ​
+1. [Определение высоты самолета](https://github.com/UniumGames/Lessons/tree/master/10/01)
+2. [Таймер (часть №2)](https://github.com/UniumGames/Lessons/tree/master/10/02)
+3. [Светофор](https://github.com/UniumGames/Lessons/tree/master/10/03)
+4. [Секундомер](https://github.com/UniumGames/Lessons/tree/master/10/04)
+5. [Что делает программа](https://github.com/UniumGames/Lessons/tree/master/10/05)
 
 </details>
