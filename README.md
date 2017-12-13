@@ -13,6 +13,7 @@
 11. [Счетчик времени с помощью Time.deltaTime](https://github.com/UniumGames/Lessons/blob/master/09#Счетчик-времени-с-помощью-timedeltatime)
 12. [Позиция объекта](https://github.com/UniumGames/Lessons/blob/master/09#Позиция-объекта)
 13. [Получение внешних объектов и параметров](https://github.com/UniumGames/Lessons/blob/master/09#Получение-внешних-объектов-и-параметров)
+14. [Создание собственного цвета](https://github.com/UniumGames/Lessons/tree/master/10#Создание-собственного-цвета)
 
 Задания
 
