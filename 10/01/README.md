@@ -4,9 +4,11 @@
 
 Дополнительно сделай так, чтобы отображалось еще минимальная высота.
 
+![](https://api.monosnap.com/rpc/file/download?id=SOjK22yBluaeApVOcpP9ljiP1w8X37)
+
 Необходимые знания:
 
-[Conditions (Условия)](https://github.com/UniumGames/Lessons/tree/master/10#Оператор-if)
+[Conditions (Условия)](https://github.com/UniumGames/Lessons/tree/master/10#Оператор-if), [переменные](https://github.com/UniumGames/Lessons/blob/master/09#%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5), [конкатенация строк](https://github.com/UniumGames/Lessons/blob/master/09#%D0%9A%D0%BE%D0%BD%D0%BA%D0%B0%D1%82%D0%B5%D0%BD%D0%B0%D1%86%D0%B8%D1%8F-%D1%81%D1%82%D1%80%D0%BE%D0%BA)
 
 Критерии качества:
 
