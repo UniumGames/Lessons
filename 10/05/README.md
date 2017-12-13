@@ -4,7 +4,7 @@
 
 Необходимые знания:
 
-[Conditions (Условия)](http://unity3d.unium.ru/lessons/lesson10/index.html#conditions), [изменение цвета с помощью скрипта](http://unity3d.unium.ru/lessons/lesson10/index.html#changecolor).
+[Conditions (Условия)](https://github.com/UniumGames/Lessons/tree/master/10#conditions-Условия), [создание собственного цвета](https://github.com/UniumGames/Lessons/tree/master/10#Создание-собственного-цвета)
 
 Критерии качества:
 

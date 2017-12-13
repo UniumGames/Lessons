@@ -151,7 +151,7 @@ void Update() {
 
 ```csharp
 void Start() {
-	transform.localScale = new Vector3(0.5F, 1, 1);
+	transform.localScale = new Vector3(0.5f, 1, 1);
 }
 ```
 
