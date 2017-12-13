@@ -4,7 +4,7 @@
 
 Необходимые знания:
 
-[Conditions (Условия)](https://github.com/UniumGames/Lessons/tree/master/10#conditions-Условия), [изменение положения, поворота, размера объекта в скрипте](http://unity3d.unium.ru/lessons/lesson10/index.html#changeposrotscale).
+[Conditions (Условия)](https://github.com/UniumGames/Lessons/tree/master/10#conditions-Условия), [счетчик времени с помощью Time.deltaTime](https://github.com/UniumGames/Lessons/tree/master/09#Счетчик-времени-с-помощью-timedeltatime), [задание координат объекта](https://github.com/UniumGames/Lessons/tree/master/10#%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BA%D0%BE%D0%BE%D1%80%D0%B4%D0%B8%D0%BD%D0%B0%D1%82-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0)
 
 Критерии качества:
 

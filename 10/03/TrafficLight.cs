@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TrafficLight : MonoBehaviour {
-	double time = 0;
+	float time = 0;
 	void Update() {
 		time = time + Time.deltaTime;
 

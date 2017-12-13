@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Teleport : MonoBehaviour {
-	double time = 0;
+	float time = 0;
 	void Update() {
 		time = time + Time.deltaTime;
 
@@ -11,6 +11,8 @@ public class Teleport : MonoBehaviour {
 		if (time > 15) {
 			// то перемещаемся в координаты (0, 0, 0)
 			transform.position = new Vector3(0, 0, 0);
+			// и начинаем отсчет заново
+			time = 0;
 		}
 	}
 }

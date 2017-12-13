@@ -4,9 +4,11 @@
 
 Создай модель секундомера из цилиндров, кубов. Каждую секунду стрелка должна поворачиваться на определенный угол так, чтобы за 60 секунд прошла полный круг.
 
+![](http://unity3d.unium.ru/lessons/lesson10/images/seconds.jpg)
+
 Необходимые знания:
 
-[Conditions (Условия)](http://unity3d.unium.ru/lessons/lesson10/index.html#conditions), [изменение положения, поворота, размера объекта в скрипте](http://unity3d.unium.ru/lessons/lesson10/index.html#changeposrotscale).
+[Conditions (Условия)](https://github.com/UniumGames/Lessons/tree/master/10#Оператор-if), [Вращение объекта](https://github.com/UniumGames/Lessons/tree/master/10#Вращение-объекта)
 
 Критерии качества:
 
