@@ -6,6 +6,10 @@
 
 ![](http://unity3d.unium.ru/lessons/lesson10/images/seconds.jpg)
 
+Дополнительно:
+
+Сделай, чтобы каждые десять секунд в консоль выводилось сколько всего секунд прошло
+
 Необходимые знания:
 
 [Conditions (Условия)](https://github.com/UniumGames/Lessons/tree/master/10#Оператор-if), [Вращение объекта](https://github.com/UniumGames/Lessons/tree/master/10#Вращение-объекта)
