@@ -4,7 +4,7 @@
 
 Необходимые знания:
 
-[Button](http://unity3d.unium.ru/lessons/lesson11/index.html#button), [обработка события нажатия на кнопку](http://unity3d.unium.ru/lessons/lesson11/index.html#clickbutton), [анимация перемещения, вращения объекта с помощью uScript](http://unity3d.unium.ru/lessons/lesson11/index.html#scriptanim).
+[Button](https://github.com/UniumGames/Lessons/tree/master/11#button), [функции](https://github.com/UniumGames/Lessons/tree/master/11#Функции), [обработка события нажатия на кнопку](https://github.com/UniumGames/Lessons/tree/master/11#Обработка-события-нажатия-на-кнопку), [вращение объекта](https://github.com/UniumGames/Lessons/blob/master/10/README.md#Вращение-объекта).
 
 Критерии качества:
 

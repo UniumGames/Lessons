@@ -8,7 +8,7 @@
 
 Необходимые знания:
 
-[Button](http://unity3d.unium.ru/lessons/lesson11/index.html#button), [обработка события нажатия на кнопку](http://unity3d.unium.ru/lessons/lesson11/index.html#clickbutton), [изменение текста с помощью скрипта](http://unity3d.unium.ru/lessons/lesson11/index.html#script_change_text).
+[Button](https://github.com/UniumGames/Lessons/tree/master/11#button), [функции](https://github.com/UniumGames/Lessons/tree/master/11#Функции), [обработка события нажатия на кнопку](https://github.com/UniumGames/Lessons/tree/master/11#Обработка-события-нажатия-на-кнопку), [изменение текста с помощью скрипта](https://github.com/UniumGames/Lessons/blob/master/11/README.md#Изменение-текста-с-помощью-скрипта).
 
 Критерии качества:
 
