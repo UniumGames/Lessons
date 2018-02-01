@@ -86,13 +86,17 @@ void OnTriggerEnter(Collider other) {
 - `Input.GetKeyDown()` проверяет, что кнопку только что нажали
 - `Input.GetKeyUp()` проверяет, что кнопку отпустили
 
+Эти методы принимают параметром либо строку с именем клавиши, либо константу класса `KeyCode`. Второй вариант обычно удобнее
+
 ```csharp
 void Update() {
+    // передаем в GetKey строку с именем клавиши
     if (Input.GetKey("up")){
         print("Клавиша вверх зажата");
     }
-    
-    if (Input.GetKey("down")){
+
+    // передаем в GetKey константу из KeyCode
+    if (Input.GetKey(KeyCode.DownArrow)){
         print("Клавиша вниз зажата");
     }
 }
