@@ -80,3 +80,27 @@
 7. [Задание №7: Кликер](https://github.com/UniumGames/Lessons/tree/master/11/07)
 
 </details>
+
+<details><summary>Занятие №12: Анимация, создание префабов, триггеры, система ввода, звук</summary>
+
+1. [Создание префаба с помощью скрипта](https://github.com/UniumGames/Lessons/tree/master/12#Создание-префаба-с-помощью-скрипта)
+2. [Триггеры](https://github.com/UniumGames/Lessons/tree/master/12#Триггеры)
+3. [Удаление объектов](https://github.com/UniumGames/Lessons/tree/master/12#Удаление-объектов)
+4. [Система ввода. Чтение клавиш](https://github.com/UniumGames/Lessons/tree/master/12#Система-ввода-Чтение-клавиш)
+5. [Получение имени объекта](https://github.com/UniumGames/Lessons/tree/master/12#Получение-имени-объекта)
+6. [Получение тега объекта](https://github.com/UniumGames/Lessons/tree/master/12#Получение-тега-объекта)
+7. [Создание нового тега](https://github.com/UniumGames/Lessons/tree/master/12#Создание-нового-тега)
+8. [Добавление звука с помощью скрипта](https://github.com/UniumGames/Lessons/tree/master/12#Добавление-звука-с-помощью-скрипта)
+
+Задания
+
+1. [Задание №1: Раннер](https://github.com/UniumGames/Lessons/tree/master/12/01)
+2. [Задание №2: Забей гол (часть 3)](https://github.com/UniumGames/Lessons/tree/master/12/02)
+3. [Задание №3: Тир](https://github.com/UniumGames/Lessons/tree/master/12/03)
+4. [Задание №4: Платформер (часть 2)](https://github.com/UniumGames/Lessons/tree/master/12/04)
+5. [Задание №5: Боулинг](https://github.com/UniumGames/Lessons/tree/master/12/05)
+6. [Задание №6: Угадай мелодию](https://github.com/UniumGames/Lessons/tree/master/12/06)
+7. [Задание №7: Собирай бонусы](https://github.com/UniumGames/Lessons/tree/master/12/07)
+8. [Задание №8: Слендер. Собирай записки (часть №3)](https://github.com/UniumGames/Lessons/tree/master/12/08)
+
+</details>

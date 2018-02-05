@@ -106,9 +106,9 @@ void Update () {
 }
 ```
 
-Для плавного перемещения или вращения объекта скорость нужно задавать с помощью следующей формулы:
+Видео: [проблемы анимации без учета времени](https://github.com/UniumGames/Lessons/blob/master/10/animdelta.mp4?raw=true) ([Полный урок](https://unity3d.com/ru/learn/tutorials/topics/scripting/delta-time))
 
- Видео: [проблемы анимации без учета времени](https://github.com/UniumGames/Lessons/blob/master/10/animdelta.mp4?raw=true) ([Полный урок](https://unity3d.com/ru/learn/tutorials/topics/scripting/delta-time))
+Для плавного перемещения или вращения объекта скорость нужно задавать с помощью следующей формулы:
 
 ![](http://unity3d.unium.ru/lessons/lesson12/images/vt.jpg)
 
