@@ -70,7 +70,7 @@ void OnTriggerEnter(Collider other) {
 
 Необходимые знания:
 
-[Звук](http://unity3d.unium.ru/lessons/lesson12/index.html#sound), [триггеры](http://unity3d.unium.ru/lessons/lesson12/index.html#triggers).
+[Звук](https://github.com/UniumGames/Lessons/tree/master/12#Добавление-звука-с-помощью-скрипта), [триггеры](https://github.com/UniumGames/Lessons/tree/master/12#Триггеры).
 
 Критерии качества:
 
