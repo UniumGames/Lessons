@@ -97,12 +97,13 @@ void Start() {
 
 Чтобы перемещать объект используйте метод `Translate()`. Ему передается вектор, на который следует подвинуть объект
 
-Объект двигается на один вправо каждую секунду
+Объект двигается на 5 вправо каждую секунду
 
 ```csharp
+float speed = 5;
 void Update () {
 	// вектор Vector3.right - это то же самое, что new Vector3(1, 0, 0)
-	transform.Translate(Vector3.right * Time.deltaTime);
+	transform.Translate(Vector3.right * speed * Time.deltaTime);
 }
 ```
 
