@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CompanionStore : MonoBehaviour {
+public class Portal : MonoBehaviour {
 	public GameObject companion;
+	public bool isPlayerCaptured;
 }

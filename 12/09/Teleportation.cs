@@ -4,22 +4,27 @@ using UnityEngine;
 
 public class Teleportation : MonoBehaviour {
 
-	static float time = 0;
-
 	void OnTriggerEnter(Collider other) {
-		if (other.tag == "Player") {
-			if (Time.time - time > 2) {
-				time = Time.time;
-				if(!GetComponent<Rigidbody>().isKinematic){
-					return;
-				}
-
-				var companion = GetComponent<CompanionStore>().companion;
-				if (companion == null) {
-					return;
-				}
-				other.transform.position = companion.transform.position;
-			}
+		if (other.tag != "Player") {
+			return;
 		}
+
+		Portal portalData = GetComponent<Portal>();
+		if (portalData.isPlayerCaptured) {
+			portalData.isPlayerCaptured = false;
+			return;
+		}
+
+		if (!GetComponent<Rigidbody>().isKinematic) {
+			return;
+		}
+
+		var companion = GetComponent<Portal>().companion;
+		if (companion == null) {
+			return;
+		}
+
+		other.transform.position = companion.transform.position;
+		companion.GetComponent<Portal>().isPlayerCaptured = true;
 	}
 }

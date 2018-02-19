@@ -21,13 +21,12 @@ public class PortalHit : MonoBehaviour {
 		}
 	}
 
-	private IEnumerator Enlarge(float time) {
+	private IEnumerator Enlarge(float duration) {
 		float startTime = Time.time;
 		Vector3 startingScale = transform.localScale;
 		Vector3 endScale = new Vector3(3, 3, 1);
-		while (Time.time - startTime < time) {
-			print(Time.time - startTime);
-			transform.localScale = Vector3.Lerp(startingScale, endScale, (Time.time - startTime) / time);
+		while (Time.time - startTime < duration) {
+			transform.localScale = Vector3.Lerp(startingScale, endScale, (Time.time - startTime) / duration);
 			yield return null;
 		}
 		Destroy(this);
