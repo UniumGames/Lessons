@@ -16,11 +16,11 @@
 
 4. в таблице анимаций добавь следующие анимации:
 
-   - «**Skelet@Idle**». «**Start**»= 0, «**End**» = 240. «**LoopTime**» включен.
-   - «**Skelet@Attack**». «**Start**»= 315, «**End**» = 350. «**LoopTime**» включен.
-   - «**Skelet@Dance**». «**Start**»= 458, «**End**» = 1275. «**LoopTime**» включен.
+   - «**Skeleton@Idle**». «**Start**»= 0, «**End**» = 240. «**LoopTime**» включен.
+   - «**Skeleton@Attack**». «**Start**»= 315, «**End**» = 350. «**LoopTime**» включен.
+   - «**Skeleton@Dance**». «**Start**»= 458, «**End**» = 1275. «**LoopTime**» включен.
 
-5. На панели «**Project**» нажми ![img](http://unity3d.unium.ru/images/rmb.png) → «**Create**» → «**Animator Controller**». Введи имя аниматора «**SkeletNPC**». Открой редактор аниматора.
+5. На панели «**Project**» нажми ![img](http://unity3d.unium.ru/images/rmb.png) → «**Create**» → «**Animator Controller**». Введи имя аниматора «**SkeletonNPC**». Открой редактор аниматора.
 
 6. Создай новое состояние с помощью ![img](http://unity3d.unium.ru/images/rmb.png) → «**Create State**» → «**Empty**». Выдели новое состояние и настрой его:
 
@@ -48,9 +48,18 @@
 
     ![img](http://unity3d.unium.ru/lessons/lesson15/images/npc5.jpg)
 
-15. Создай скрипт по имени «**Skelet**». Присвой его к скелету.
+15. Создай скрипт по имени «**Skeleton**». Присвой его скелету.
+    Скрипт должен работать так: 
 
-16. [![img](http://unity3d.unium.ru/lessons/lesson15/images/npc6.jpg)](http://unity3d.unium.ru/lessons/lesson15/images/npc6.jpg)
+    - Содержит публичную переменную `isFriend` типа `bool` (логическая). Она отвечает за то, друг данный скелет или враг. Друг будет танцевать, а враг - атаковать
+
+       ```csharp
+       public bool isFriend;
+       ```
+
+    - При входе в триггер проверяется друг ли этот  скелет. Если друг, то активируем параметр `dance`. Иначе (если враг), активируем параметр `attack`
+
+    - При выходе из триггера выключаем оба параметра аниматора (`dance` и `attack`)
 
 17. Скопируй несколько скелетов на сцене. В компоненте скрипта можно настраивать какой скелет будет дружественным:
 
@@ -58,7 +67,7 @@
 
 Необходимые знания:
 
-[Создание анимации (Animation)](http://unity3d.unium.ru/lessons/lesson15/index.html#createanim), [Граф состояний (Animator)](http://unity3d.unium.ru/lessons/lesson15/index.html#createanimator), [замена модели в Third Person Character](http://unity3d.unium.ru/lessons/lesson15/index.html#changemesh), [управление графом состояния с помощью параметров](http://unity3d.unium.ru/lessons/lesson15/index.html#scriptanimator), [импорт анимации](http://unity3d.unium.ru/lessons/lesson15/index.html#importanim).
+[Создание анимации (Animation)](https://github.com/UniumGames/Lessons/tree/master/15#%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D0%B8-animation), [Граф состояний (Animator)](https://github.com/UniumGames/Lessons/tree/master/15#%D0%93%D1%80%D0%B0%D1%84-%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B9-animator), [замена модели в Third Person Character](https://github.com/UniumGames/Lessons/tree/master/15#%D0%97%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8-%D0%B2-third-person-character), [управление графом состояния с помощью параметров](https://github.com/UniumGames/Lessons/tree/master/15#%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B3%D1%80%D0%B0%D1%84%D0%BE%D0%BC-%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D1%8F-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%B2), [импорт анимации](https://github.com/UniumGames/Lessons/tree/master/15#%D0%98%D0%BC%D0%BF%D0%BE%D1%80%D1%82-%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D0%B8)
 
 Критерии качества:
 
