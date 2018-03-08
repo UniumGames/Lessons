@@ -71,13 +71,13 @@
 
 Задания
 
-1. [Задание №1: Забей гол (часть №2)](https://github.com/UniumGames/Lessons/tree/master/11/01)
-2. [Задание №2: Переключатель освещения](https://github.com/UniumGames/Lessons/tree/master/11/02)
-3. [Задание №3: Дизайн главного меню](https://github.com/UniumGames/Lessons/tree/master/11/03)
-4. [Задание №4: Игра 16+](https://github.com/UniumGames/Lessons/tree/master/11/04)
-5. [Задание №5: Выбор цвета автомобиля](https://github.com/UniumGames/Lessons/tree/master/11/05)
-6. [Задание №6: Мельница](https://github.com/UniumGames/Lessons/tree/master/11/06)
-7. [Задание №7: Кликер](https://github.com/UniumGames/Lessons/tree/master/11/07)
+1. [Забей гол (часть №2)](https://github.com/UniumGames/Lessons/tree/master/11/01)
+2. [Переключатель освещения](https://github.com/UniumGames/Lessons/tree/master/11/02)
+3. [Дизайн главного меню](https://github.com/UniumGames/Lessons/tree/master/11/03)
+4. [Игра 16+](https://github.com/UniumGames/Lessons/tree/master/11/04)
+5. [Выбор цвета автомобиля](https://github.com/UniumGames/Lessons/tree/master/11/05)
+6. [Мельница](https://github.com/UniumGames/Lessons/tree/master/11/06)
+7. [Кликер](https://github.com/UniumGames/Lessons/tree/master/11/07)
 
 </details>
 
@@ -94,13 +94,36 @@
 
 Задания
 
-1. [Задание №1: Раннер](https://github.com/UniumGames/Lessons/tree/master/12/01)
-2. [Задание №2: Забей гол (часть 3)](https://github.com/UniumGames/Lessons/tree/master/12/02)
-3. [Задание №3: Тир](https://github.com/UniumGames/Lessons/tree/master/12/03)
-4. [Задание №4: Платформер (часть 2)](https://github.com/UniumGames/Lessons/tree/master/12/04)
-5. [Задание №5: Боулинг](https://github.com/UniumGames/Lessons/tree/master/12/05)
-6. [Задание №6: Угадай мелодию](https://github.com/UniumGames/Lessons/tree/master/12/06)
-7. [Задание №7: Собирай бонусы](https://github.com/UniumGames/Lessons/tree/master/12/07)
-8. [Задание №8: Слендер. Собирай записки (часть №3)](https://github.com/UniumGames/Lessons/tree/master/12/08)
+1. [Раннер](https://github.com/UniumGames/Lessons/tree/master/12/01)
+2. [Забей гол (часть 3)](https://github.com/UniumGames/Lessons/tree/master/12/02)
+3. [Тир](https://github.com/UniumGames/Lessons/tree/master/12/03)
+4. [Платформер (часть 2)](https://github.com/UniumGames/Lessons/tree/master/12/04)
+5. [Боулинг](https://github.com/UniumGames/Lessons/tree/master/12/05)
+6. [Угадай мелодию](https://github.com/UniumGames/Lessons/tree/master/12/06)
+7. [Собирай бонусы](https://github.com/UniumGames/Lessons/tree/master/12/07)
+8. [Слендер. Собирай записки (часть №3)](https://github.com/UniumGames/Lessons/tree/master/12/08)
+
+</details>
+
+<details><summary>Занятие №15: Анимация персонажей</summary>
+
+1. [Анимация](https://github.com/UniumGames/Lessons/tree/master/15#%D0%90%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D1%8F)
+2. [Замена модели в Third Person Character](https://github.com/UniumGames/Lessons/tree/master/15#%D0%97%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8-%D0%B2-third-person-character)
+3. [Анимация на основе ключевых кадров](https://github.com/UniumGames/Lessons/tree/master/15#%D0%90%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5-%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%B2%D1%8B%D1%85-%D0%BA%D0%B0%D0%B4%D1%80%D0%BE%D0%B2)
+4. [Создание анимации (Animation)](https://github.com/UniumGames/Lessons/tree/master/15#%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D0%B8-animation)
+5. [Граф состояний (Animator)](https://github.com/UniumGames/Lessons/tree/master/15#%D0%93%D1%80%D0%B0%D1%84-%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B9-animator)
+6. [Управление графом состояния с помощью параметров](https://github.com/UniumGames/Lessons/tree/master/15#%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B3%D1%80%D0%B0%D1%84%D0%BE%D0%BC-%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D1%8F-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%B2)
+7. [Импорт анимации](https://github.com/UniumGames/Lessons/tree/master/15#%D0%98%D0%BC%D0%BF%D0%BE%D1%80%D1%82-%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D0%B8)
+
+Задания
+
+1. [Halloween](https://github.com/UniumGames/Lessons/tree/master/15/01.%20Halloween)
+2. [Пришельцы](https://github.com/UniumGames/Lessons/tree/master/15/02.%20Пришельцы)
+3. [Мяч](https://github.com/UniumGames/Lessons/tree/master/15/03.%20Мяч)
+4. [Заставка главного меню](https://github.com/UniumGames/Lessons/tree/master/15/04.%20Заставка%20главного%20меню)
+5. [Полет по ландшафту](https://github.com/UniumGames/Lessons/tree/master/15/05.%20Полет%20по%20ландшафту)
+6. [Платформер (часть №3)](https://github.com/UniumGames/Lessons/tree/master/15/07.%20Найди%20друга)
+7. [Найди друга](https://github.com/UniumGames/Lessons/tree/master/15/07.%20Найди%20друга)
+8. [Анимация двери](https://github.com/UniumGames/Lessons/tree/master/15/08.%20Анимация%20двери)
 
 </details>
