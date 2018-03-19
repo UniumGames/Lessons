@@ -122,7 +122,7 @@
 3. [Мяч](https://github.com/UniumGames/Lessons/tree/master/15/03.%20Мяч)
 4. [Заставка главного меню](https://github.com/UniumGames/Lessons/tree/master/15/04.%20Заставка%20главного%20меню)
 5. [Полет по ландшафту](https://github.com/UniumGames/Lessons/tree/master/15/05.%20Полет%20по%20ландшафту)
-6. [Платформер (часть №3)](https://github.com/UniumGames/Lessons/tree/master/15/07.%20Найди%20друга)
+6. [Платформер (часть №3)](https://github.com/UniumGames/Lessons/tree/master/15/06.%20Платформер%20(часть%20№3))
 7. [Найди друга](https://github.com/UniumGames/Lessons/tree/master/15/07.%20Найди%20друга)
 8. [Анимация двери](https://github.com/UniumGames/Lessons/tree/master/15/08.%20Анимация%20двери)
 
