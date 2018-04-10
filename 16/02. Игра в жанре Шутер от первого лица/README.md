@@ -203,17 +203,22 @@ void OnCollisionEnter(Collision collision) {
 public int health = 100;
 
 void Start() {
+	// подписываемся на событие DamageEvent
 	Rocket.DamageEvent += TakeDamage;
 }
 
 void TakeDamage(Vector3 explosionPos, int damage) {
 	float dist = Vector3.Distance(transform.position, explosionPos);
+	// если игрок в радиусе поражения,
+	// то наносим урон
 	if (dist < 3) {
 		health -= damage;
 	}
 }
 
 void Update() {
+	// удаляем паука, 
+	// когда у него кончилось здоровье
 	if (health <= 0) {
 		Destroy(gameObject);
 	}
