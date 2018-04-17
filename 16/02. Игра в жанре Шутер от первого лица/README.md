@@ -165,7 +165,7 @@ void Update() {
 
 В центре изображен взрыв от ракеты. Взрыв должен поражать врагов с радиусом 3 единицы (радиус воздействия взрыва на рисунке). Во время взрыва всем паукам посылается событие с именем «**Damage**» вместе с данными (имя события может быть любым). В событие передаются первым параметром координаты положения взрыва, вторым параметром — сила взрыва. По умолчанию «**25**» единиц.
 
-Чтобы событие рассылалось внеси необходимые изменения в скрипт `Rocket`
+Чтобы событие рассылалось, внеси необходимые изменения в скрипт `Rocket`
 
 <details><summary>Rocket</summary>
 
@@ -183,7 +183,9 @@ void Start() {
 void OnCollisionEnter(Collision collision) {
 	int damage = 25;
 	// рассылаем событие DamageEvent
-	DamageEvent(transform.position, damage);
+	if(DamageEvent != null){
+		DamageEvent(transform.position, damage);
+	}
 
 	GameObject explosionClone = Instantiate(explosion, transform.position, transform.rotation);
 	Destroy(explosionClone, 5);
@@ -193,7 +195,7 @@ void OnCollisionEnter(Collision collision) {
 
 </details>
 
-Далее, у каждого врага есть здоровье (Health на рисунке). Каждый паук на сцене получает событие «**DamageEvent**» с данными. Эти данные обрабатываются. Далее проверяет расстояние паука до взрыва и, если это расстояние меньше радиуса поражения — отнимается здоровье у врага. Если это здоровье будет меньше нуля — паук умирает и удаляется со сцены.
+Далее, у каждого врага есть здоровье (Health на рисунке). Каждый паук на сцене получает событие «**DamageEvent**» с данными. Эти данные обрабатываются. Далее проверяет расстояние паука до взрыва и, если это расстояние меньше радиуса поражения — отнимается здоровье у врага. Если здоровье кончилось — паук умирает и удаляется со сцены
 
 Создай новый скрипт по имени «**SpiderHealth**» и добавь его к префабу паука
 
@@ -217,9 +219,10 @@ void TakeDamage(Vector3 explosionPos, int damage) {
 }
 
 void Update() {
-	// удаляем паука, 
+	// удаляем паука и отписываемся от события,
 	// когда у него кончилось здоровье
 	if (health <= 0) {
+		Rocket.DamageEvent -= TakeDamage;
 		Destroy(gameObject);
 	}
 }
@@ -342,11 +345,13 @@ void Update() {
 	}
 
 	// раз в секунду отправляем событие атаки с уроном 20
-	if(shouldAttack){
+	if (shouldAttack) {
 		time += Time.deltaTime;
-		if (time > 1){
+		if (time > 1) {
 			time = 0;
-			AttackEvent(20);
+			if(AttackEvent != null){
+				AttackEvent(20);
+			}
 		}
 	}
 }
@@ -375,6 +380,7 @@ void Start() {
 void TakeDamage(int damage) {
 	health -= damage;
 	if (health <= 0) {
+		SpiderAI.AttackEvent -= TakeDamage;
 		Application.Quit();
 	}
 }
