@@ -133,7 +133,7 @@ void OnCollisionEnter(Collision collision) {
 Скрипт:
 
 1. Ищет на сцене игрока. Для поиска используется метод Find: `GameObject.Find("FPSController")`
-2. Постоянно обновляет цель паука: заставляет его идти к игроку, вызывая метод `SetDestination()` компонента `NavMeshAgent`
+2. Постоянно обновляет цель паука: заставляет его идти к игроку, вызывая метод `SetDestination()` компонента `NavMeshAgent`. [Документация](https://docs.unity3d.com/ScriptReference/AI.NavMeshAgent.SetDestination.html)
 
 <details><summary>SpiderAI</summary>
 
@@ -241,8 +241,8 @@ void Update() {
 Открой скрипт «**SpiderAI**». Внесем в него изменения:
 
 - Добавь публичную переменную `shouldMove` типа `bool`. Она будет хранить, должен ли двигаться паук. Исправь код так, чтобы он двигался только, когда `shouldMove` равна `true`
-- Вычисли угол между пауком и игроком с помощью метода `Vector3.Angle`
-- Вычисли расстояние до игрока с помощью метода `Vector3.Distance`
+- Вычисли угол между пауком и игроком с помощью метода `Vector3.Angle`. [Документация](https://docs.unity3d.com/ScriptReference/Vector3.Angle.html)
+- Вычисли расстояние до игрока с помощью метода `Vector3.Distance`. [Документация](https://docs.unity3d.com/ScriptReference/Vector3.Distance.html)
 - Активируй переменную `shouldMove`, если игрок на расстоянии от 2 до 5 и находится спереди паука
 
 <details><summary>SpiderAI</summary>
