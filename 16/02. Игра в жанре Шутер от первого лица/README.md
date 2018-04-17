@@ -70,7 +70,7 @@ void Update () {
 Скрипт должен:
 
 1. Автоматически уничтожать ракету через 5 секунд, если она не попала в цель
-2. Cоздавать `Explosion` при столкновении ракеты и удалять саму ракету со сцены. Через 5 секунд после попадания, частицы взрыва тоже следует удалить
+2. Cоздавать частицы взрыва при столкновении ракеты и удалять саму ракету со сцены. Через 5 секунд после попадания, частицы тоже следует удалить
 
 <details><summary>Rocket</summary>
 
@@ -133,7 +133,7 @@ void OnCollisionEnter(Collision collision) {
 Скрипт:
 
 1. Ищет на сцене игрока. Для поиска используется метод Find: `GameObject.Find("FPSController")`
-2. Постоянно обновляет цель паука: заставляет его идти к игроку через компонент `NavMeshAgent`
+2. Постоянно обновляет цель паука: заставляет его идти к игроку, вызывая метод `SetDestination()` компонента `NavMeshAgent`
 
 <details><summary>SpiderAI</summary>
 
@@ -141,7 +141,7 @@ void OnCollisionEnter(Collision collision) {
 Transform player;
 
 void Start() {
-	// сохраняем игрока
+	// сохраняем transform игрока
 	player = GameObject.Find("FPSController").transform;
 }
 
@@ -163,9 +163,9 @@ void Update() {
 
 ![img](http://unity3d.unium.ru/lessons/lesson16/images/task2/fps11.jpg)
 
-В центре изображен взрыв от ракеты. Взрыв должен поражать врагов с радиусом 3 единицы (радиус воздействия взрыва на рисунке). Во время взрыва всем паукам посылается событие с именем «**Damage**» вместе с данными (имя события может быть любым). В событие передаются первым параметром координаты положения взрыва, вторым параметром — сила взрыва. По умолчанию «**25**» единицы.
+В центре изображен взрыв от ракеты. Взрыв должен поражать врагов с радиусом 3 единицы (радиус воздействия взрыва на рисунке). Во время взрыва всем паукам посылается событие с именем «**Damage**» вместе с данными (имя события может быть любым). В событие передаются первым параметром координаты положения взрыва, вторым параметром — сила взрыва. По умолчанию «**25**» единиц.
 
-Чтобы событие расылалось внеси необходимые изменения в скрипт `Rocket`
+Чтобы событие раcсылалось внеси необходимые изменения в скрипт `Rocket`
 
 <details><summary>Rocket</summary>
 
@@ -193,9 +193,9 @@ void OnCollisionEnter(Collision collision) {
 
 </details>
 
-Далее, у каждого врага есть здоровье (Health на рисунке). Каждый паук на сцене получает событие «**Damage**» с данными. Эти данные обрабатываются. Далее проверяет расстояние паука до взрыва и, если это расстояние меньше радиуса поражения, — отнимается здоровье у врага. Если это здоровье будет меньше нуля — паук умирает и удаляется со сцены.
+Далее, у каждого врага есть здоровье (Health на рисунке). Каждый паук на сцене получает событие «**DamageEvent**» с данными. Эти данные обрабатываются. Далее проверяет расстояние паука до взрыва и, если это расстояние меньше радиуса поражения — отнимается здоровье у врага. Если это здоровье будет меньше нуля — паук умирает и удаляется со сцены.
 
-Создай новый скрипт по имени «**SpiderHealth**» и добавь его к префабу паука.
+Создай новый скрипт по имени «**SpiderHealth**» и добавь его к префабу паука
 
 <details><summary>SpiderHealth</summary>
 
@@ -233,41 +233,212 @@ void Update() {
 
 Скрипт искусственного интеллекта имеет ряд недостатков. Паук постоянно бежит к игроку и не атакует. Также, паук должен двигаться в сторону игрока только тогда, когда игрок находится в зоне его видимости. Общий алгоритм ты можешь увидеть на рисунке:
 
+![](http://unity3d.unium.ru/lessons/lesson16/images/task2/fps12.jpg)
+
 Открой скрипт «**SpiderAI**». Внесем в него изменения:
 
-![img](http://unity3d.unium.ru/lessons/lesson16/images/task2/spiderai2.jpg)
+- Добавь публичную переменную `shouldMove` типа `bool`. Она будет хранить, должен ли двигаться паук. Исправь код так, чтобы он двигался только, когда `shouldMove` равна `true`
+- Вычисли угол между пауком и игроком с помощью метода `Vector3.Angle`
+- Вычисли расстояние до игрока с помощью метода `Vector3.Distance`
+- Активируй переменную `shouldMove`, если игрок на расстоянии от 2 до 5 и находится спереди паука
+
+<details><summary>SpiderAI</summary>
+
+```csharp
+Transform player;
+// надо ли двигаться
+public bool shouldMove = true;
+
+void Start() {
+	// сохраняем игрока
+	player = GameObject.Find("FPSController").transform;
+}
+
+void Update() {
+	// вектор, направленный от паука к игроку
+	Vector3 targetDir = player.position - transform.position;
+	// угол между пауком и игроком
+	float angle = Vector3.Angle(targetDir, transform.forward);
+	// расстояние до игрока
+	float dist = Vector3.Distance(player.position, transform.position);
+	// если игрок на расстоянии от 2 до 5 и спереди паука,
+	// то идем к нему
+	if (dist <= 5 && dist > 2 && angle <= 90) {
+		shouldMove = true;
+	} else {
+		shouldMove = false;
+	}
+
+	if (shouldMove) {
+		// получаем NavMeshAgent паука
+		NavMeshAgent agent = GetComponent<NavMeshAgent>();
+		// и приказываем ему двигаться к игроку
+		agent.SetDestination(player.position);
+	}
+}
+```
+
+</details>
 
 Запусти игру. Проверь, что пауки преследуют игрока, когда он находится на близком расстоянии и в зоне видимости.
 
 ### Задание №8: Система жизней игрока
 
-Когда паук нападает на игрока – игроку не причиняется урон и он не умирает. Создай скрипт по имени «**PlayerHealth**» и добавь его к игроку.
-
-![img](http://unity3d.unium.ru/lessons/lesson16/images/task2/playerhealth.jpg)
+Когда паук нападает на игрока – игроку не причиняется урон и он не умирает. Для рассылки сообщения об атаке мы снова воспользуемся пользовательскими событиями
 
 Открой скрипт «**SpiderAI**». Внеси в него изменения:
 
-![img](http://unity3d.unium.ru/lessons/lesson16/images/task2/spiderai3.jpg)
+- Добавь публичную переменную `shouldAttack` типа `bool`. Она будет хранить, должен ли паук атаковать`
+- Активируй переменную `shouldAttack`, если игрок ближе двух и находится спереди паука
+- Создай новое событие `AttackEvent`
+- Когда паук должен атаковать, рассылай это событие раз в секунду и передавай в нем урон 20 единиц
 
-Запусти игру. Проверь, что у игрока отнимается здоровье (переменная Health уменьшается). А если создать готовую игру, то происходит выход из игры, когда игрок умирает.
+<details><summary>SpiderAI</summary>
+
+```csharp
+Transform player;
+float time = 0;
+
+// надо ли двигаться
+public bool shouldMove = true;
+// надо ли атаковать
+public bool shouldAttack = true;
+// событие атаки
+public static Action<int> AttackEvent;
+
+void Start() {
+	// сохраняем игрока
+	player = GameObject.Find("FPSController").transform;
+}
+
+void Update() {
+	// вектор, направленный от паука к игроку
+	Vector3 targetDir = player.position - transform.position;
+	// угол между пауком и игроком
+	float angle = Vector3.Angle(targetDir, transform.forward);
+	// расстояние до игрока
+	float dist = Vector3.Distance(player.position, transform.position);
+	// если игрок на расстоянии от 2 до 5 и спереди паука,
+	// то идем к нему
+	if (dist <= 5 && dist > 2 && angle <= 90) {
+		shouldMove = true;
+	} else {
+		shouldMove = false;
+	}
+
+	if (shouldMove) {
+		// получаем NavMeshAgent паука
+		NavMeshAgent agent = GetComponent<NavMeshAgent>();
+		// и приказываем ему двигаться к игроку
+		agent.SetDestination(player.position);
+	}
+
+	// если игрок ближе двух и спереди паука,
+	// то атакуем
+	if (dist <= 2 && angle <= 90) {
+		shouldAttack = true;
+	} else {
+		shouldAttack = false;
+	}
+
+	// раз в секунду отправляем событие атаки с уроном 20
+	if(shouldAttack){
+		time += Time.deltaTime;
+		if (time > 1){
+			time = 0;
+			AttackEvent(20);
+		}
+	}
+}
+```
+
+</details>
+
+Создай скрипт по имени «**PlayerHealth**» и добавь его к игроку
+
+В скрипте:
+
+- Добавь публичную переменную `health` типа `int`, в которй будет храниться здоровье игрока (изначально 100)
+- Слушай событие `AttackEvent`
+- В обработчике события уменьшай здоровье на полученный урон
+- Если здоровье упадет ниже нуля, то завершай игру с помощью метода `Application.Quit()`
+
+<details><summary>PlayerHealth</summary>
+
+```csharp
+public int health = 100;
+
+void Start() {
+	SpiderAI.AttackEvent += TakeDamage;
+}
+
+void TakeDamage(int damage) {
+	health -= damage;
+	if (health <= 0) {
+		Application.Quit();
+	}
+}
+```
+
+</details>
+
+Запусти игру. Проверь, что у игрока отнимается здоровье (переменная health уменьшается). А если создать готовую игру, то происходит выход из игры, когда игрок умирает.
 
 ### Задание №9: Анимация
 
-На панели «**Project**» нажми ![img](http://unity3d.unium.ru/images/rmb.png) → «**Create**» → «**Animator Controller**». Введи имя аниматора «**Spider**». Открой редактор аниматора. Добавь параметры «**run**», «**attack**» типа «**Bool**». Настрой граф состояний следующим образом:
+На панели «**Project**» создай папку **Animation**. В ней нажми ![img](http://unity3d.unium.ru/images/rmb.png) → «**Create**» → «**Animator Controller**». Введи имя аниматора «**Spider**». Открой редактор аниматора. Добавь параметры «**run**», «**attack**» типа «**Bool**». Настрой граф состояний следующим образом:
 
 ![img](http://unity3d.unium.ru/lessons/lesson16/images/task2/fps13.jpg)
 
-Создай новый скрипт по имени «**SpiderAnim**» и присвой его к префабу паука.
+Создай новый скрипт по имени «**SpiderAnim**» и присвой его к префабу паука
 
-![img](http://unity3d.unium.ru/lessons/lesson16/images/task2/spideranim.jpg)
+<details><summary>PlayerHealth</summary>
+
+```csharp
+void Update () {
+	Animator animator = GetComponent<Animator>();
+	SpiderAI ai = GetComponent<SpiderAI>();
+	// задаем параметр аниматора run в зависимости от того,
+	// что хранится в shouldMove компонента SpiderAI
+	animator.SetBool("run", ai.shouldMove);
+	// задаем параметр аниматора attack в зависимости от того,
+	// что хранится в shouldAttack компонента SpiderAI
+	animator.SetBool("attack", ai.shouldAttack);
+}
+```
+
+</details>
 
 Выдели префаб паука. В компоненте «**Animator**» в параметре «**Controller**» выбери «**Spider**». Запусти игру. Проверь, что анимация атаки, перемещения работают.
 
 ### Задание №10: Звук атаки
 
-Добавим звук атаки паука. Перетащи аудио файл «**Attack**» из папки «**Sounds**» в папку «**Resources**».
+Добавим звук атаки паука. Настрой `Audio Source` так, как было описано в [занятии 3](http://unity3d.unium.ru/lessons/lesson3/index.html#addsound). При этом отключи опцию `Play on Awake` (проиграть при старте), так как мы будем запускать проигрывание клипа из скрипта
 
-![img](http://unity3d.unium.ru/lessons/lesson16/images/task2/spidersound.jpg)
+Напиши скрипт `AttackSound` в котором раз в секунду [включай звук](https://github.com/UniumGames/Lessons/tree/master/12#%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B7%D0%B2%D1%83%D0%BA%D0%B0-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%B0), если паук атакует
+
+<details><summary>AttackSound</summary>
+
+```csharp
+float time = 0;
+void Update () {
+	SpiderAI ai = GetComponent<SpiderAI>();
+	// если паук атакует,
+	// раз в секунду проигрываем звук атаки
+	if (ai.shouldAttack) {
+		time += Time.deltaTime;
+		if (time > 1) {
+			time = 0;
+			// получаем компонент AudioSource
+			AudioSource audio = GetComponent<AudioSource>();
+			// и проигрываем добавленный в него звук
+			audio.Play();
+		}
+	}
+}
+```
+
+</details>
 
 Теперь, когда паук атакует, то воспроизводится звук атаки.
 
