@@ -127,3 +127,24 @@
 8. [Анимация двери](https://github.com/UniumGames/Lessons/tree/master/15/08.%20Анимация%20двери)
 
 </details>
+
+<details><summary>Занятие №16: Проектная работа</summary>
+
+1. [События. Рассылка и прослушивание](https://github.com/UniumGames/Lessons/blob/master/16/README.md#%D0%A1%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F-%D0%A0%D0%B0%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0-%D0%B8-%D0%BF%D1%80%D0%BE%D1%81%D0%BB%D1%83%D1%88%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)
+2. [Логические операторы](https://github.com/UniumGames/Lessons/blob/master/16/README.md#%D0%9B%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B)
+
+Игра в жанре Шутер от первого лица
+
+1. [Подготовка](https://github.com/UniumGames/Lessons/blob/master/16/02.%20Игра%20в%20жанре%20Шутер%20от%20первого%20лица/README.md#%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-1-%D0%9F%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0)
+2. [Гранатомет](https://github.com/UniumGames/Lessons/blob/master/16/02.%20Игра%20в%20жанре%20Шутер%20от%20первого%20лица/README.md#%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-2-%D0%93%D1%80%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B5%D1%82)
+3. [Ракеты](https://github.com/UniumGames/Lessons/blob/master/16/02.%20Игра%20в%20жанре%20Шутер%20от%20первого%20лица/README.md#%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-3-%D0%A0%D0%B0%D0%BA%D0%B5%D1%82%D1%8B)
+4. [Создание врагов](https://github.com/UniumGames/Lessons/blob/master/16/02.%20Игра%20в%20жанре%20Шутер%20от%20первого%20лица/README.md#%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-4-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B2%D1%80%D0%B0%D0%B3%D0%BE%D0%B2)
+5. [Искусственный интеллект (часть №1)](https://github.com/UniumGames/Lessons/blob/master/16/02.%20Игра%20в%20жанре%20Шутер%20от%20первого%20лица/README.md#%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-5-%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D0%B8%D0%BD%D1%82%D0%B5%D0%BB%D0%BB%D0%B5%D0%BA%D1%82-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1)
+6. [Убийство врагов](https://github.com/UniumGames/Lessons/blob/master/16/02.%20Игра%20в%20жанре%20Шутер%20от%20первого%20лица/README.md#%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-6-%D0%A3%D0%B1%D0%B8%D0%B9%D1%81%D1%82%D0%B2%D0%BE-%D0%B2%D1%80%D0%B0%D0%B3%D0%BE%D0%B2)
+7. [Искусственный интеллект (часть №2)](https://github.com/UniumGames/Lessons/blob/master/16/02.%20Игра%20в%20жанре%20Шутер%20от%20первого%20лица/README.md#%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-7-%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D0%B8%D0%BD%D1%82%D0%B5%D0%BB%D0%BB%D0%B5%D0%BA%D1%82-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2)
+8. [Система жизней игрока](https://github.com/UniumGames/Lessons/blob/master/16/02.%20Игра%20в%20жанре%20Шутер%20от%20первого%20лица/README.md#%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-8-%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%B6%D0%B8%D0%B7%D0%BD%D0%B5%D0%B9-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%B0)
+9. [Анимация](https://github.com/UniumGames/Lessons/blob/master/16/02.%20Игра%20в%20жанре%20Шутер%20от%20первого%20лица/README.md#%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-9-%D0%90%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D1%8F)
+10. [Звук атаки](https://github.com/UniumGames/Lessons/blob/master/16/02.%20Игра%20в%20жанре%20Шутер%20от%20первого%20лица/README.md#%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-10-%D0%97%D0%B2%D1%83%D0%BA-%D0%B0%D1%82%D0%B0%D0%BA%D0%B8)
+11. [Улучшения](https://github.com/UniumGames/Lessons/blob/master/16/02.%20Игра%20в%20жанре%20Шутер%20от%20первого%20лица/README.md#%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-11-%D0%A3%D0%BB%D1%83%D1%87%D1%88%D0%B5%D0%BD%D0%B8%D1%8F)
+
+</details>
