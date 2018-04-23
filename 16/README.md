@@ -17,7 +17,7 @@ using UnityEngine;
 
 public class Sender : MonoBehaviour {
 	// создаем глобальное событие CollisionEvent
-	public static Action<Vector3> CollisionEvent;
+	public static Action<Vector3> CollisionEvent = delegate {};
 
 	void OnCollisionEnter(Collision collision) {
 		// рассылаем событие CollisionEvent

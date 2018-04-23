@@ -172,7 +172,7 @@ void Update() {
 ```csharp
 public GameObject explosion;
 // создаем событие DamageEvent
-public static Action<Vector3, int> DamageEvent;
+public static Action<Vector3, int> DamageEvent = delegate {};
 
 void Start() {
 	// автоматическое уничтожение ракеты
@@ -183,9 +183,7 @@ void Start() {
 void OnCollisionEnter(Collision collision) {
 	int damage = 25;
 	// рассылаем событие DamageEvent
-	if(DamageEvent != null){
-		DamageEvent(transform.position, damage);
-	}
+	DamageEvent(transform.position, damage);
 
 	GameObject explosionClone = Instantiate(explosion, transform.position, transform.rotation);
 	Destroy(explosionClone, 5);
@@ -307,7 +305,7 @@ public bool shouldMove = true;
 // надо ли атаковать
 public bool shouldAttack = true;
 // событие атаки
-public static Action<int> AttackEvent;
+public static Action<int> AttackEvent = delegate {};
 
 void Start() {
 	// сохраняем игрока
@@ -349,9 +347,7 @@ void Update() {
 		time += Time.deltaTime;
 		if (time > 1) {
 			time = 0;
-			if(AttackEvent != null){
-				AttackEvent(20);
-			}
+			AttackEvent(20);
 		}
 	}
 }
