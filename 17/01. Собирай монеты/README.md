@@ -1,6 +1,6 @@
 ### Задание №1: Собирай монеты
 
-[Скачать материалы](http://unity3d.unium.ru/storage/lesson15/skeleton.zip)
+[Скачать материалы](https://github.com/UniumGames/Lessons/blob/master/17/01.%20Собирай%20монеты/Sprites%20для%20примера%20и%201%20задания.zip)
 
 Импортируй пакет `2D` и добавь героя на сцену
 

@@ -1,6 +1,6 @@
 ### Задание №2: Doodle Jump
 
-[Скачать материалы](http://unity3d.unium.ru/storage/lesson15/skeleton.zip)
+[Скачать материалы](https://github.com/UniumGames/Lessons/blob/master/17/02.%20Doodle%20Jump/Sprites%20для%202%20задания.zip)
 
 Cоздай сцену из doodle jump. Задача игрока - подняться как можно выше
 
