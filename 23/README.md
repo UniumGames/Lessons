@@ -16,6 +16,7 @@
 4. Создаем новый скрипт `MountainSpawn`
    ![](https://github.com/UniumGames/Lessons/raw/master/23/img/image3.png)
 5. Теперь при касании скал, игрок должен проиграть. Для этого нужно будет создать отдельный уровень, на котором нужно будет выложить буквами Game Over. После этого нужно будет открыть код `PlaneController` и добавить туда код
+
    ![Alt text](https://monosnap.com/image/WGqVl4KSHelnzyNlhpLmyzqbYIgX1n.png)
 6. Теперь добавим вражеские самолеты. Нужно будет для них также создать анимацию и в компоненте Sprite Renderer включить параметр Flip по X. Таким образом, вражеский самолет развернется к нашему самолету. Не забываем также добавить Circle Collider 2D и указать его как триггер. Еще нужно будет создать новый тег Enemy и присвоить его самолету. И не забываем про скрипт `DestroyUnusedObject`, который также нужно будет добавить
 7. Теперь создаем новый скрипт `EnemyController`, который нужно будет добавить вражескому самолету и после этого сделать из него префаб и перенести в папку Resources
@@ -23,6 +24,7 @@
 8. После этого нам понадобиться новый скрипт `EnemySpawn`, который будет создавать вражеские самолеты
    ![](https://github.com/UniumGames/Lessons/raw/master/23/img/image6.png)
 9. Также нужно будет изменить скрипт `PlaneController`, чтобы наш самолет теперь реагировал и на вражеские самолеты
+
    ![Alt text](https://monosnap.com/image/sDeRR9yLPV6Eih6tBJtVFO61n91cpw.png)
 10. На этом все. Ребятам осталось только создать меню, и чтобы при нажатии кнопки Play игра начиналась. Можно сделать примерно такое меню
-    ![](https://github.com/UniumGames/Lessons/raw/master/23/img/image8.png)
+   ![](https://github.com/UniumGames/Lessons/raw/master/23/img/image8.png)
