@@ -4,7 +4,7 @@
 
 1. Создай слои в Sorting Layers и выстрой их в правильно порядке. Здесь важно учесть, что наша рогатка состоит из 2 частей, так как снаряд будет пролетать между рогатками, то длинная часть должна быть за снарядом, а короткая перед снарядом
 
-  ![](img/image1.png)
+  ![](https://github.com/UniumGames/Lessons/raw/master/21/img/image1.png)
 
 2. Добавить коллайдер к земле, чтобы астероид не упал.
 
@@ -16,28 +16,28 @@
 
 4. Нужно настроить Spring Joint 2D. Здесь вначале нужно установить правильно начальные точки. На картинке показаны расположения точек. Крайняя точка настраивается параметром Connected Anchor. Промежуточная точка настраивается параметром Distance, предварительно отключив параметр Auto Configure Distance. Также нужно будет установить параметр Frequency = 3
 
-    ![](img/image2.png)
+    ![](https://github.com/UniumGames/Lessons/raw/master/21/img/image2.png)
 
 5. После настройки этого компонента его нужно будет отключить, убрав галочку с компонента.
 
 6. Теперь нужно написать код для запуска снаряда. Все 3 кода пишутся в одном скрипте.
 
-    ![](img/image3.png)
+    ![](https://github.com/UniumGames/Lessons/raw/master/21/img/image3.png)
 
-    ![](img/image4.png)
+    ![](https://github.com/UniumGames/Lessons/raw/master/21/img/image4.png)
 
-    ![](img/image5.png)
+    ![](https://github.com/UniumGames/Lessons/raw/master/21/img/image5.png)
 
 7. После проверки работы кода, можно добавить платформы с коллайдерами и физикой для первого уровня. К примеру, вот так:
 
-    ![](img/image6.png)
+    ![](https://github.com/UniumGames/Lessons/raw/master/21/img/image6.png)
 
 8. Последним этапом будет создание врага. В нашем случае это птичка. Чтобы была возможность ее уничтожить, на птичку наложим 2 коллайдера: Polygon Collider 2D и Circle Collider 2D (триггер). Расположение второго колайдера можно увидеть на картинке.
 
-    ![](img/image7.png)
+    ![](https://github.com/UniumGames/Lessons/raw/master/21/img/image7.png)
 
 9. После этого пишем код и добавляем его на птичку
 
-    ![](img/image8.png)
+    ![](https://github.com/UniumGames/Lessons/raw/master/21/img/image8.png)
 
 10. Теперь можно дорабатывать игру, различными способами. Это и новые уровни, враги, меню и тд.
