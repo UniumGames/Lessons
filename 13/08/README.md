@@ -1,6 +1,6 @@
 ### Задание №8: Portal
 
-Напиши игру по мотивам Portal. [Демо](https://github.com/UniumGames/Lessons/raw/master/12/09/PortalBuild.zip)
+Напиши игру по мотивам Portal. [Демо](https://github.com/UniumGames/Lessons/raw/master/13/08/PortalBuild.zip)
 
 ![Alt text](https://monosnap.com/image/h0PkwTveu3lTtER9HML6mGiAcKWw5z)
 
